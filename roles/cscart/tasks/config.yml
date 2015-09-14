@@ -8,3 +8,4 @@
   with_dict: stores
   tags:
     - cscart
+    - deploy

@@ -7,6 +7,7 @@
     group={{ deploy.group }}
   tags:
     - common
+    - deploy
 
 - name: create project directories
   file:
@@ -20,3 +21,4 @@
   tags:
     - nginx
     - php
+    - deploy

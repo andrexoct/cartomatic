@@ -6,6 +6,7 @@
   with_dict: stores
   tags:
     - cscart
+    - deploy
 
 - name: copy local_conf.php
   template:
@@ -17,6 +18,7 @@
   with_dict: stores
   tags:
     - cscart
+    - deploy
 
 - name: set permissions
   file:
@@ -35,3 +37,4 @@
       ]
   tags:
     - cscart
+    - deploy

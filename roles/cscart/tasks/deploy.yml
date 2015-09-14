@@ -7,6 +7,7 @@
   with_dict: stores
   tags:
     - cscart
+    - deploy
 
 - name: create projects directories
   file:
@@ -22,6 +23,7 @@
     - nginx
     - php
     - cscart
+    - deploy
 
 - name: copy repository and unpack archive
   unarchive: src={{ item.value.cart.dist }} dest={{ stores_dir }}/{{ item.key }} copy=no
@@ -29,3 +31,4 @@
   with_dict: stores
   tags:
     - cscart
+    - deploy

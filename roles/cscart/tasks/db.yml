@@ -3,7 +3,11 @@
 - name: create user databases
   mysql_db: db={{ item.value.database['name'] }} state=present login_user=root login_password={{ mysql.password }}
   with_dict: stores
+  tags:
+    - deploy
 
 - name: grant user privileges
   mysql_user: name={{ item.value.database['user'] }} password={{ item.value.database['password'] }} priv={{ item.value.database['name'] }}.*:ALL login_user=root login_password={{ mysql.password }}
   with_dict: stores
+  tags:
+    - deploy
