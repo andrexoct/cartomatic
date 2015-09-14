@@ -1,6 +1,11 @@
-stores:
-  example.com:
-    storefronts: ['example.org', 'example.ru']
-    adminpanel: "admin.php"
-    pool: "www"
-    root: "/var/www/html"
+deploy:
+  user: deploy
+  group: service
+
+service:
+  user: service
+  group: service
+
+sysadmin:
+  user: sysadmin
+  group: service

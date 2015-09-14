@@ -1,0 +1,17 @@
+{
+    "server_admin": "admin@example.com",
+    "stores_dir": "/srv/projects",
+    "stores": {
+        "example.com": {
+            "cart": {
+                "storefronts": ["example.org", "example.ru"],
+                "adminpanel": "admin.php"
+            },
+            "database": {
+                "name": "example",
+                "user": "example",
+                "password": "example"
+            }
+        }
+    }
+}
