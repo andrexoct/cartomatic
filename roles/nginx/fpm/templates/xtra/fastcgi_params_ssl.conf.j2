@@ -25,7 +25,8 @@ fastcgi_param  REDIRECT_STATUS    200;
 
 ################################################################################
 
-fastcgi_param  HTTPS              on;
-fastcgi_param  X_FORWARDED_SERVER secure;
+fastcgi_param          X-Forwarded-Server     secure;
+fastcgi_param          X-HTTPS                secure;
+fastcgi_param          HTTPS                  on;
 
 ################################################################################

@@ -137,6 +137,7 @@
     - { src: "conf-available/tweaks.conf", dest: "conf-available/tweaks.conf" }
     - { src: "xtra/error-40X.conf", dest: "xtra/error-40X.conf" }
     - { src: "xtra/error-50X.conf", dest: "xtra/error-50X.conf" }
+    - { src: "xtra/ssl.conf", dest: "xtra/ssl.conf" }
   tags:
     - nginx
 

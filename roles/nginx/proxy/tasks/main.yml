@@ -38,5 +38,6 @@
 
 - name: restart service
   command: service {{ nginx_role.service }} restart
+  ignore_errors: true
   tags:
     - nginx

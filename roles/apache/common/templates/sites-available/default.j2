@@ -9,6 +9,7 @@
 {% if item.key.find('www') == -1 %}
     ServerAlias www.{{ item.key }}
 {% endif %}
+{% if item.value.cart is defined %}
 {% if item.value.cart.storefronts is defined %}
 {% for alias in item.value.cart.storefronts %}
     ServerAlias {{ alias }}
@@ -16,6 +17,7 @@
     ServerAlias www.{{ alias }}
 {% endif %}
 {% endfor %}
+{% endif %}
 {% endif %}
     ServerSignature Off
 

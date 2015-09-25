@@ -1,3 +1,5 @@
+stores_dir: "/srv/projects"
+
 deploy:
   user: deploy
   group: service
