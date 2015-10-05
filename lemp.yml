@@ -1,37 +1,43 @@
 ---
 
-- name: Apply common configuration to all nodes
+- name: Apply configuration to all nodes
   sudo: true
   hosts: all
   roles:
     - common
+    - fail2ban
+    - logrotate/common
 
-- name: Apply configuration to app nodes
+- name: Application
   sudo: true
   hosts: app
-  vars:
-    upstream_backend: "php"
   roles:
-    - php
     - deploy
+    - php/fpm
+    - pma
+    - postfix
+    - ftp
 
 - name: Apply configuration to frontend nodes
   sudo: true
   hosts: fe
-  vars:
-    upstream_backend: "php"
   roles:
-    - { role: nginx, upstream_backend: 'php' }
-    - deploy
+    - nginx/fpm
 
 - name: Apply configuration to database nodes
   sudo: true
   hosts: db
   roles:
-    - mysql
+    - mysql/common
 
 - name: Apply configuration to nosql nodes
   sudo: true
   hosts: nosql
   roles:
     - redis
+
+- name: Install CS-Cart store
+  sudo: true
+  hosts: app
+  roles:
+    - cscart
