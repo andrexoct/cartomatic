@@ -2,15 +2,36 @@
 
 Автонастройка сервера для CS-Cart и Multi-Vendor 4.0+.
 
-## Быстрая установка
+## Установка
 
-Выполните сценарий, подставив доменное имя интернет-магазина.
+Выполните сценарий с указанием доменного имени магазина:
 
     curl -sL http://cartoma.tk/installer | bash -s -- yourdomain.ltd
 
-Если у вас не установлен cURL:
+Если не установлен cURL:
 
     wget -qO - http://cartoma.tk/installer | bash -s -- yourdomain.ltd
+
+Готово. Сервер настроен.
+
+## Установка (вручную)
+
+Выполните сценарий для установки зависимостей:
+
+    curl -sL http://cartoma.tk/preconf | bash
+
+Перейдите в каталог с конфигурациями и отредактируйте JSON-конфиг:
+
+    cd /srv/cartomatic/<version>
+    vim config/simple.json
+
+Дополнительно можете указать настройки сервисов в файлах каталога group_vars/.
+
+Запустите настройку сервера:
+
+    ansible-playbook lamp.yml -c local -e @config/simple.json
+
+Пароли будут автоматически сгенерированы и сохранены в каталоге credentials/.
 
 ## Поддерживаемые ОС
 
