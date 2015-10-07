@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/gongled/cartomatic/master/Cartomatic-Logo.png "Cartomatic Logo")
+![alt text](https://raw.githubusercontent.com/gongled/cartomatic/master/cartomatic.png "Cartomatic Logo")
 
 ## О проекте
 
@@ -54,7 +54,6 @@
 ## Благодарности
 
 * [@jsjant](https://github.com/jsjant) за название проекта.
-* [@hyrintalion](https://www.behance.net/hyrintalion) за логотип.
 
 ## Лицензия
 
