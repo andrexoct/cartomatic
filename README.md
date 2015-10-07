@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/gongled/cartomatic/master/Cartomatic-Logo.png "Cartomatic Logo")
+
 ## О проекте
 
 Автонастройка сервера для CS-Cart и Multi-Vendor 4.0+.
