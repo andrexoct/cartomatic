@@ -1,8 +1,8 @@
-![alt text](https://raw.githubusercontent.com/gongled/cartomatic/master/cartomatic.png "Cartomatic Logo")
-
 ## О проекте
 
-Автонастройка сервера для CS-Cart и Multi-Vendor 4.0+.
+Cartomatic поможет настроить вам сервер под CS-Cart и Multi-Vendor 4.0+.
+
+![alt text](https://raw.githubusercontent.com/gongled/cartomatic/master/cartomatic.png "Cartomatic Logo")
 
 ## Быстрый старт
 
