@@ -1,4 +1,4 @@
-stores_dir: "/srv/projects"
+stores_dir: "/var/www/html"
 
 deploy:
   user: deploy
